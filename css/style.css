@@ -2095,3 +2095,12 @@ span.error {
 .gsap-reveal-img .reveal-wrap .reveal-content .portfolio-item-content h3 {
   margin-bottom: 10px;
 }
+
+
+.footer-site-social a,
+.footer-site-social li {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
