@@ -2117,4 +2117,11 @@ span.error {
     pointer-events: none !important;
 }
 
+@media (max-width: 768px) {
+  .col-md-6.col-lg-4 {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+  }
+}
+
 
