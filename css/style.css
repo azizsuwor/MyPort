@@ -2104,3 +2104,17 @@ span.error {
     pointer-events: auto;
 }
 
+.footer-site-social,
+.footer-site-social a,
+.site-footer,
+.footer-site-social li {
+    position: relative !important;
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+}
+
+.overlay {
+    pointer-events: none !important;
+}
+
+
