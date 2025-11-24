@@ -2124,4 +2124,58 @@ span.error {
   }
 }
 
+/* ============================================
+   FIX RESPONSIVE — LAYOUT AGAR KONSISTEN DI HP
+   ============================================ */
+
+@media (max-width: 767px) {
+
+  /* Matikan garis vertical pengganggu */
+  .vertical-line,
+  .line,
+  .site-section:before,
+  .site-section:after {
+      display: none !important;
+  }
+
+  /* Pastikan overlay tidak menghalangi klik */
+  .overlay {
+      pointer-events: none !important;
+  }
+
+  /* Footer link tetap bisa diklik */
+  .footer-site-social,
+  .footer-site-social a,
+  .footer-site-social li,
+  .site-footer {
+      position: relative !important;
+      z-index: 9999 !important;
+      pointer-events: auto !important;
+  }
+
+  /* Konsistensi padding setiap section */
+  .site-section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+
+  /* Semua layout jadi stabil 1 kolom (tidak berubah-ubah) */
+  .col-md-4,
+  .col-md-6,
+  .col-lg-4 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+  }
+
+  /* Portfolio / gallery rapi di HP */
+  .item,
+  .blog-entry,
+  .journal-entry {
+      margin-bottom: 1.5rem !important;
+  }
+}
+
+
 
